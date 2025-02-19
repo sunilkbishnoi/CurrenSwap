@@ -1,0 +1,42 @@
+body {
+    width: 320px;
+    background: #fff;
+    color: #222;
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 #000;
+    transition: all 0.2s ease-in-out;
+}
+
+input, select {
+    background: #fff;
+    color: #222;
+}
+
+button {
+    background: #e60000;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 6px 6px 0 #000;
+    transform: translate(-2px, -2px);
+}

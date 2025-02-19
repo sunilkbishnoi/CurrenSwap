@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "CurrenSwap 💱",
+  "version": "1.0",
+  "description": "Automatically converts currencies on any webpage.",
+  "author": "Sunil Bishnoi",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://api.exchangerate-api.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
